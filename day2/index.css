@@ -1,0 +1,54 @@
+/* Universal selector or CSS Reset */
+* {
+  margin-left: 10px;
+  /* border-left-style: double;
+  border-left-color: aliceblue;
+  border-right-style: solid;
+  border-right-width: 20px;
+  border-right-color: black; */
+  color: white;
+}
+body {
+  background-color: bisque;
+  /* background-image: url("./assets/images/sasi2.jpg"); */
+  background-image: url("https://picsum.photos/600");
+  /* background-repeat: repeat-y; */
+  background-size: cover;
+}
+/* element selector */
+h1 {
+  color: green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: aquamarine; */
+  font-size: 2em;
+}
+/* class selector  */
+.mycolor {
+  background-color: lightblue;
+  color: blue;
+  font-family: cursive;
+}
+/* ID Selector */
+#border1 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 20px;
+}
+
+/*
+CSS Selector types
+1. Element Selector
+2. Class Selector
+3. ID Selector
+4. Universal Selector (Selects all elements)
+5. Attribute Selector
+6. Pseudo-class Selector
+7. Pseudo-element Selector
+8. Grouping Selector
+9. Combinators (Descendant, Child, Sibling, Adjacent Sibling)
+
+
+
+*/

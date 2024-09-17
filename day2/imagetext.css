@@ -1,0 +1,38 @@
+.container {
+  /* margin: 30px; */
+  width: 600px;
+  background-color: blue;
+  color: white;
+  border-style: outset;
+  border-width: 10px;
+  border-color: skyblue;
+}
+img {
+  float: right;
+  border: white 10px inset;
+  border-radius: 100px;
+}
+p {
+  text-align: justify;
+  font-size: 1em;
+  text-indent: 40px;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: normal;
+}
+/* Pseudo classes */
+
+img:hover {
+  /* border-radius: 100px; */
+  transition: transform 0.8s;
+  transform: scaleX(-1);
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  /* height: 100%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
