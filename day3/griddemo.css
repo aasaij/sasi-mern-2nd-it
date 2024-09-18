@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; /* old browsers */
+  gap: 2px 2px;
+  grid-template-rows: 100px auto 65vh 100px;
+  /* column-gap: 10px;
+  row-gap: 10px; */
+}
+.container div {
+  border: 5px solid blue;
+  background-color: lightseagreen;
+  color: white;
+  font-size: 3em;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.logo-container {
+  display: flex;
+}
+.logo-container img {
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  height: 60%;
+  opacity: 0.5;
+}
+.logo-container img:hover {
+  opacity: 1;
+}
+.container div:nth-child(4) {
+  grid-column: 1 / span 3;
+}
+.container div:nth-child(6) {
+  grid-column: 2 / span 2;
+}
+.container div:nth-child(7) {
+  grid-column: 1 / span 3;
+}
