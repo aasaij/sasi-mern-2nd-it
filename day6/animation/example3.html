@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Text Animation</title>
+    <style>
+      body {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 100vh;
+        background-color: #282c34;
+        margin: 0;
+      }
+
+      .text-container {
+        text-align: center;
+      }
+
+      .animated-text {
+        font-size: 3rem;
+        color: #61dafb;
+        opacity: 0;
+        /* transform: translateY(50px); */
+        animation: scrollText 3s alternate infinite;
+      }
+
+      @keyframes scrollText {
+        0% {
+          opacity: 0;
+          transform: translateX(100vw);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(-35vw);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-container">
+      <h1 class="animated-text">Welcome to the Future!</h1>
+    </div>
+  </body>
+</html>
